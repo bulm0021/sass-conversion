@@ -49,7 +49,7 @@ ul{
     width:30%;
     height:1rem;
     background-color: $c_darkBlue;
-    
+    }
     &:before
         {
             left: 0;
@@ -59,6 +59,7 @@ ul{
             right: 0;
         }
 }
+
 
 
 .bg-focal{
@@ -304,7 +305,7 @@ footer h4[lang=ru]{
         margin: 0 auto;    
     }
     .col-4{
-       @include equalSpace(4,5%,50%);
+       @include equalSpace(4,5%,95%);
         float:left;
     }
     section.content2 h4{
@@ -403,11 +404,16 @@ footer h4[lang=ru]{
     }
     .col-3{
         float:left;
-        @include equalSpace(3,5%,30%);
+        width: 30%;
+        margin-left: 5%;
+        
+        @include equalSpace(3,5%,100%);
     }
     .col-4{
         float:left;
-        @include equalSpace(4,4%,22%);
+         width:22%;
+        margin-left: 4%;
+        @include equalSpace(4,4%,100%);
     }
     section.content1 h3{
         font-size: 1.999rem;
@@ -514,11 +520,16 @@ footer h4[lang=ru]{
     }
     .col-3{
         float:left;
-        @include equalSpace(3,5%,30%);
+        width: 30%;
+        margin-left: 5%;
+        @include equalSpace(3,5%,100%);
     }
     .col-4{
-        float:left;
-        @include equalSpace(4,4%,22%);
+       float:left;
+        width:22%;
+        margin-left: 4%;
+        @include equalSpace(4,4%,100%);
+
     }
     section.content1 h3{
         font-size: 2.827rem;
@@ -560,5 +571,4 @@ footer h4[lang=ru]{
         display:none;
     }
     
-}
 }
