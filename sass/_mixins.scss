@@ -1,0 +1,35 @@
+@import "variables";
+@mixin large()
+{
+    @media all and (min-width:$large1)
+    {
+        @content;
+    }
+}
+
+@mixin small()
+{
+    @media all and (min-width:$small) and (max-width:$med)
+    {
+        @content;
+    }
+}
+
+@mixin med()
+{
+   @media all and (min-width:$med1) and (max-width: $large) 
+   {
+       @content;
+    }
+}
+
+@mixin equalSpace($numberOfCol,$spacing,$width)
+{
+    width: ( $width - ( $spacing * ($numberOfCol - 1) ) ) / $numberOfCol;
+  margin-left: $spacing;
+  
+
+  &:first-child{
+    margin-left: 0;
+  }
+}
